@@ -1,0 +1,114 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    box-sizing: border-box;
+    background-color: #3d3d3d;
+    overflow: hidden;
+}
+* {
+    box-sizing: border-box;
+}
+main{
+    position: relative;
+    width: 100%;
+}
+.demo-slider{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+.card-container{
+    position: relative;
+    display: block;
+    width: 100%;
+}
+.card {
+    z-index: 1;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    position: relative;
+    align-items: center;
+    pointer-events: none;
+    justify-content: center;
+    background-color: #cacaca;
+    position: absolute;
+    right: 0;
+    top: 0;
+    opacity: 0;
+    transition: all ease .6s;
+}
+
+.card.view { 
+    opacity: 1;
+    pointer-events: all;
+    z-index: 2;
+}
+
+.card-content h2{
+    font-size: 3em;
+    color: whitesmoke;
+}
+
+.slide-0{background-color: darkred;}
+.slide-1{background-color:darkcyan;}
+.slide-2{background-color: darkblue;}
+
+.btn-wrap{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    justify-items: space-between;
+    z-index: 999;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 100%;
+}
+
+.btn-wrap.hide{
+    display: none !important;
+}
+
+button{
+    outline: none;
+    border: 0;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    background-color: white;
+    transition: all ease .4s;
+}
+
+button:hover{
+    background-color: #3d3d3d;
+    color: #e6e6e6;
+}
+
+.dont-nav{
+    bottom: 0;
+    width: 100%;
+    z-index: 999;
+    display: flex;
+    list-style: none;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+}
+
+.dont-nav > li{
+    width: 20px;
+    height: 20px;
+    border-radius: 100px;
+    background-color: white;
+    margin: 0.5rem;
+    cursor: pointer;
+}
+
+.dont-nav > li:hover {
+    background-color: #3d3d3d;
+    color: #e6e6e6;
+}
