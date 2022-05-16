@@ -1,3 +1,3 @@
 # vanila-script-slider
 
-### custome JavaScript, Css and Html
+### Pure JavaScript, Css and Html
